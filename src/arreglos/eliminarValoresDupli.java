@@ -11,8 +11,6 @@ public class eliminarValoresDupli {
         boolean validar = false;
         int numero = 0;
 
-
-
         for (int valore : valores) {
             validar = false;
             for (int j = 0; j < indice; j++) {
