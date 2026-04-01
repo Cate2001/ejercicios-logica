@@ -1,4 +1,7 @@
-package POO.SIMAP;
+package POO.SIMAP.app;
+
+import POO.SIMAP.dominio.Parqueadero;
+import POO.SIMAP.dominio.Vehiculo;
 
 public class Main {
     public static void main(String[] args) {

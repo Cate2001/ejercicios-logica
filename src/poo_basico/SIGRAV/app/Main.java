@@ -1,4 +1,8 @@
-package POO.SIGRAV;
+package POO.SIGRAV.app;
+
+import POO.SIGRAV.dominio.RutaAerea;
+import POO.SIGRAV.dominio.Vuelo;
+import POO.SIGRAV.dominio.Avion;
 
 public class Main {
     public static void main(String[] args) {

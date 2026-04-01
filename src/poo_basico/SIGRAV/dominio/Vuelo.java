@@ -1,4 +1,4 @@
-package POO.SIGRAV;
+package POO.SIGRAV.dominio;
 
 public class Vuelo {
     //La clase Vuelo (la Transacción) tiene la responsabilidad de

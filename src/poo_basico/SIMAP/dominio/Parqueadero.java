@@ -1,4 +1,4 @@
-package POO.SIMAP;
+package POO.SIMAP.dominio;
 
 public class Parqueadero {
     //maneja la lógica de ocupación y cálculo.

@@ -1,4 +1,4 @@
-package POO.SIGRAV;
+package POO.SIGRAV.dominio;
 
 public class Avion {
 

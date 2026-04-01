@@ -1,4 +1,4 @@
-package POO.SIMAP;
+package POO.SIMAP.dominio;
 
 import java.time.LocalTime;
 
