@@ -1,9 +1,9 @@
 package POO.heerencia.PersonasCompania.dominio;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona {
     private Double renumeracion;
     private int empleadoId;
-    private int autoincrementable = 0;
+    private static int autoincrementable = 0;
 
     public Empleado(String nombre, String apellido, String numeroFiscal, String direccion, Double renumeracion) {
         super(nombre, apellido, numeroFiscal, direccion);
@@ -19,12 +19,9 @@ public class Empleado extends Persona{
         return empleadoId;
     }
 
-    public int getAutoincrementable() {
-        return autoincrementable;
-    }
-
-    public void aumentarRemuneracion(int porcentaje){
-
+    public void aumentarRemuneracion(int porcentaje) {
+        if (porcentaje < 0) throw new IllegalArgumentException("El valor no puede ser negativo");
+        this.renumeracion += porcentaje;
     }
 
     @Override

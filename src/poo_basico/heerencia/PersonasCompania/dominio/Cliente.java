@@ -2,18 +2,17 @@ package POO.heerencia.PersonasCompania.dominio;
 
 public class Cliente extends Persona {
     private int clienteId;
-    private int autoincrementable = 0;
+    private static int autoincrementable = 0;
 
     public Cliente(String nombre, String apellido, String numeroFiscal, String direccion) {
         super(nombre, apellido, numeroFiscal, direccion);
         this.clienteId = ++autoincrementable;
     }
 
-    public int getAutoincrementable() {
-        return autoincrementable;
-    }
-
     public int getClienteId() {
+        return clienteId;
+    }
+    public int getEmpleadoId() {
         return clienteId;
     }
 
