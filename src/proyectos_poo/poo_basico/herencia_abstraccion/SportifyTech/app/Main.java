@@ -10,7 +10,7 @@ public class Main {
                 ServicioCompetidor servicio = new ServicioCompetidor();
 
                 // ===============================
-                // CREACIÓN DE ENTRENADORES BASE
+                // CREACIÓN DE ENTRENADORES BASE prueba
                 // ===============================
 
                 Entrenador entrenador1 = new Entrenador(
