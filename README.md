@@ -208,7 +208,7 @@ Run: proyectos_poo.poo_basico.SIGRAV.app.Main
 **Proyecto POO - FitLife**
 ```bash
 # Ejecutar sistema de gimnasio
-Run: proyectos_poo.poo_basico.herencia_abstraccion.fitlife.app.Main
+Run: proyectos_poo.poo_basico.herencia_abstraccion_interfaces.fitlife.app.Main
 ```
 
 ---
