@@ -53,6 +53,6 @@ public class Camion extends Vehiculo implements GPS {
 
     @Override
     public String obtenerUbicacion() {
-        return "";
+        return "La ubicación del camión es Barranquilla.";
     }
 }
