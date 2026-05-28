@@ -33,7 +33,12 @@ public class Main {
         //Mostrar info de las personas agregadas
         System.out.println("PERSONAS AGREGADAS ✅");
         try {
-            servicioPersona.mostrarArregloPersonas();
+            Persona[] personas = servicioPersona.obtenerArregloPersonas();
+            for (Persona persona : personas) {
+                if (persona != null) {
+                    System.out.println(persona.toString());
+                }
+            }
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
         }
@@ -41,11 +46,11 @@ public class Main {
         System.out.println("-------------------------------------------------------------------------------------");
         //Contar profesores y estudiantes agregados al arreglo
         System.out.println("Total de personas por tipo:");
-        servicioPersona.mostrarCantidadTipoPersona();
+        System.out.println(servicioPersona.obtenerCantidadTipoPersona());
 
         System.out.println("-------------------------------------------------------------------------------------");
         System.out.println("MATRIZ PERSONAS");
-        servicioPersona.mostrarMatrizPersonas();
+        System.out.println(servicioPersona.obtenerMatrizPersonas());
 
         System.out.println("-------------------------------------------------------------------------------------");
         System.out.println("Actividad personas");
