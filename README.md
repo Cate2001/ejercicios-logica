@@ -41,15 +41,19 @@ src/
         ├── SIMAP/               # Sistema de Gestión de Parqueaderos
         │   ├── app/
         │   └── model/
-        ├── herencia_abstraccion/# Proyectos de herencia y abstracción
+        ├── herencia_abstraccion_interfaces/# Proyectos de herencia, abstracción e interfaces
         │   ├── GestionPersonasUniversidad/
         │   │   ├── app/
         │   │   ├── enums/
         │   │   ├── model/
         │   │   └── services/
-        │   ├── PersonasCompania/
+        │   ├── SGVE/                    # Sistema de Gestión de Vehículos de Envío
         │   │   ├── app/
-        │   │   └── model/
+        │   │   ├── enums/
+        │   │   ├── interfaces/
+        │   │   ├── model/
+        │   │   ├── services/
+        │   │   └── util/
         │   ├── SportifyTech/
         │   │   ├── app/
         │   │   ├── enums/
@@ -66,12 +70,14 @@ src/
 
 ### 🎨 Patrones de Arquitectura Implementados
 
-- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, util, enums)
+- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, util, enums, interfaces)
 - **Domain-Driven Design**: Organización por dominios de negocio
 - **Encapsulamiento**: Clases con atributos privados y acceso controlado
 - **Herencia y Polimorfismo**: Uso de clases abstractas y interfaces
+- **Interfaces**: Contratos de comportamiento (GPS, Recargable)
 - **Inmutabilidad**: Objetos con atributos finales donde aplica
 - **Validación de Dominio**: Lógica de validación en constructores
+- **Servicios**: Capa de lógica de negocio separada del modelo
 
 ---
 
@@ -98,7 +104,12 @@ src/
 - Control de flujo complejo
 
 **Recursividad**
-- Algoritmos recursivos
+- Suma recursiva de arrays
+- Conteo hacia atrás y adelante
+- Suma de números consecutivos
+- Cálculo de potencias
+- Búsqueda de números en arrays
+- Búsqueda del número mayor
 - División y conquista
 - Backtracking básico
 
@@ -121,6 +132,20 @@ src/
 - Enumeraciones para tipos de persona
 - Servicio de gestión de personas
 - Validación de dominio
+
+**SGVE - Sistema de Gestión de Vehículos de Envío**
+- Clase abstracta Vehiculo con atributos comunes (placa, marca, capacidadCarga, estado, distanciaRecorrida)
+- Clases concretas: Dron, Moto, Camion con atributos específicos
+  - Dron: nivelBateria, alturaMaxima, consumoBateria (implementa GPS y Recargable)
+  - Moto: cilindraje, consumoGasolina (implementa GPS)
+  - Camion: numeroEjes, pesoActualCarga, costoPeajes (implementa GPS)
+- Interfaces: GPS (ubicación) y Recargable (batería)
+- Enumeración de estados: DISPONIBLE, EN_RUTA, MANTENIMIENTO
+- Clase de utilidades Constantes con valores centralizados (COSTO_BASE, BATERIA_MAXIMA, COSTO_KM_CAMION)
+- Servicio VehiculoService con gestión dinámica usando ArrayList
+- Validaciones exhaustivas de dominio en constructores y setters
+- Cálculo de costos de envío personalizado por tipo de vehículo
+- Pruebas unitarias con 19 casos de prueba
 
 **SportifyTech - Plataforma Deportiva**
 - Competidores y entrenadores
@@ -196,19 +221,25 @@ src/
 **Ejercicio Básico - Arreglos**
 ```bash
 # Ejecutar eliminación de duplicados
-Run: ejercicios_basicos.arreglos.eliminarValoresDupli
+Run: ejercicios_basicos.arreglos.EliminarValoresDuplicadoscados
 ```
 
 **Proyecto POO - SIGRAV**
 ```bash
 # Ejecutar sistema de rutas aéreas
-Run: proyectos_poo.poo_basico.SIGRAV.app.Main
+Run: app.SIGRAV.com.cate.proyectos.poo.basico.Main
 ```
 
 **Proyecto POO - FitLife**
 ```bash
 # Ejecutar sistema de gimnasio
-Run: proyectos_poo.poo_basico.herencia_abstraccion_interfaces.fitlife.app.Main
+Run: app.fitlife.herencia_abstraccion_interfaces.com.cate.proyectos.poo.basico.Main
+```
+
+**Proyecto POO - SGVE**
+```bash
+# Ejecutar sistema de gestión de vehículos de envío
+Run: app.SGVE.herencia_abstraccion_interfaces.com.cate.proyectos.poo.basico.Main
 ```
 
 ---
@@ -216,11 +247,16 @@ Run: proyectos_poo.poo_basico.herencia_abstraccion_interfaces.fitlife.app.Main
 ## 📊 Métricas del Proyecto
 
 - **Total de ejercicios básicos**: 19
-- **Total de proyectos POO**: 6
+- **Total de proyectos POO**: 5
+- **Total de archivos Java**: 35
 - **Clases implementadas**: 35+
-- **Líneas de código**: ~3000+
+- **Interfaces implementadas**: 2 (GPS, Recargable)
+- **Enumeraciones**: 2 (EstadoVehiculo, TipoPersona)
+- **Clases de utilidades**: 2 (Constantes en SGVE y fitlife)
+- **Líneas de código**: ~4000+
 - **Complejidad algorítmica**: Básica a Intermedia
-- **Patrones de diseño**: Strategy, Template Method, Factory (implícitos)
+- **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer (implícitos)
+- **Casos de prueba unitarios**: 19 (SGVE)
 
 ---
 
@@ -236,6 +272,7 @@ Run: proyectos_poo.poo_basico.herencia_abstraccion_interfaces.fitlife.app.Main
 - ✅ Encapsulamiento y abstracción
 - ✅ Herencia y polimorfismo
 - ✅ Interfaces y clases abstractas
+- ✅ Implementación de múltiples interfaces
 - ✅ Composición sobre herencia
 - ✅ Principios SOLID
 
