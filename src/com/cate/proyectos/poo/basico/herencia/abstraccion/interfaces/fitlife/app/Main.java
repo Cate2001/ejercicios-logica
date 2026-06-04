@@ -8,7 +8,56 @@ import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.enu
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.enums.DiaSemana;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.services.GimnasioService;
 
+/**
+ * Clase principal de demostración del sistema de gimnasio FitLife.
+ * <p>
+ * Esta clase contiene un conjunto de pruebas exhaustivas que demuestran
+ * el funcionamiento del sistema, incluyendo:
+ * </p>
+ * <ul>
+ * <li>Creación y registro de diferentes tipos de miembros (Estándar, Estudiantil, VIP)</li>
+ * <li>Validación de campos y manejo de excepciones</li>
+ * <li>Registro y control de asistencias</li>
+ * <li>Cálculo de pagos mensuales y estadísticas del gimnasio</li>
+ * <li>Búsqueda y comparación de miembros</li>
+ * <li>Verificación de funcionalidades de enumeraciones</li>
+ * </ul>
+ * <p>
+ * Las pruebas están diseñadas para validar todos los aspectos funcionales
+ * del sistema, incluyendo casos de éxito y casos de error esperados.
+ * </p>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta todas las pruebas del sistema.
+     * <p>
+     * Realiza 17 pruebas diferentes que cubren:
+     * </p>
+     * <ol>
+     * <li>Registro de miembro estándar</li>
+     * <li>Registro de miembro estudiantil</li>
+     * <li>Registro de miembro VIP</li>
+     * <li>Prevención de duplicados por cédula</li>
+     * <li>Registro de asistencias</li>
+     * <li>Manejo de cédulas inexistentes</li>
+     * <li>Visualización de miembros registrados</li>
+     * <li>Cálculo de estadísticas del gimnasio</li>
+     * <li>Búsqueda de miembros por cédula</li>
+     * <li>Validación de edad fuera de rango</li>
+     * <li>Validación de nombre vacío</li>
+     * <li>Validación de universidad inválida (estudiantil)</li>
+     * <li>Validación de semestre fuera de rango (estudiantil)</li>
+     * <li>Validación de entrenador personal inválido (VIP)</li>
+     * <li>Comparación de miembros con equals</li>
+     * <li>Verificación de días de fin de semana</li>
+     * <li>Información de tipos de membresía</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
 
         System.out.println("=== SISTEMA DE GIMNASIO FITLIFE ===\n");
