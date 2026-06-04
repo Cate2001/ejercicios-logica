@@ -91,7 +91,7 @@ public class MiembroEstudiantil extends Miembro {
      * @return el pago mensual con descuento estudiantil aplicado
      */
     @Override
-    double calcularPagoMensual() {
+    public double calcularPagoMensual() {
         double precio = getMembresia().getPrecioConDescuento();
         double descuento = precio * (10/100);
         double precioFinal = precio - descuento;
@@ -104,7 +104,7 @@ public class MiembroEstudiantil extends Miembro {
      * @return "Estudiantil"
      */
     @Override
-    String getTipo() {
+    public String getTipo() {
         return "Estudiantil";
     }
 
@@ -114,7 +114,7 @@ public class MiembroEstudiantil extends Miembro {
      * @return arreglo con los beneficios disponibles
      */
     @Override
-    String[] getBeneficios() {
+    public String[] getBeneficios() {
         String[] beneficio = new String[] {"Acceso Lunes-Viernes", "Descuento estudiantil 10% extra"};
         return beneficio;
     }

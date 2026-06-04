@@ -79,7 +79,7 @@ public class MiembroVip extends Miembro{
      * @return el pago mensual con cargo de entrenador personal
      */
     @Override
-    double calcularPagoMensual() {
+    public double calcularPagoMensual() {
         double precio = getMembresia().getPrecioConDescuento() + 50000;
         return precio;
     }
@@ -90,7 +90,7 @@ public class MiembroVip extends Miembro{
      * @return "VIP"
      */
     @Override
-    String getTipo() {
+    public String getTipo() {
         return "VIP";
     }
 
@@ -100,7 +100,7 @@ public class MiembroVip extends Miembro{
      * @return arreglo con los beneficios VIP disponibles
      */
     @Override
-    String[] getBeneficios() {
+    public String[] getBeneficios() {
         String[] beneficios = new  String[] {"Acceso 24/7", "Clases grupales", "Entrenador personal", "Toalla incluida", "Bebida proteica"};
         return beneficios;
     }

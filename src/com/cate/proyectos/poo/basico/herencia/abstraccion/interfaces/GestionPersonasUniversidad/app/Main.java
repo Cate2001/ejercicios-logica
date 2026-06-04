@@ -5,8 +5,6 @@ import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPers
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Persona;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Profesor;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.services.ServicioPersona;
-import proyectos_poo.poo_basico.herencia_abstraccion_interfaces.GestionPersonasUniversidad.services.*;
-import proyectos_poo.poo_basico.herencia_abstraccion_interfaces.GestionPersonasUniversidad.model.*;
 
 public class Main {
     public static void main(String[] args) {

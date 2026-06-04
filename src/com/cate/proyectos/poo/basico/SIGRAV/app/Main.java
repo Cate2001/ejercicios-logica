@@ -3,7 +3,7 @@ package com.cate.proyectos.poo.basico.SIGRAV.app;
 import com.cate.proyectos.poo.basico.SIGRAV.model.Avion;
 import com.cate.proyectos.poo.basico.SIGRAV.model.RutaAerea;
 import com.cate.proyectos.poo.basico.SIGRAV.model.Vuelo;
-import proyectos_poo.poo_basico.SIGRAV.model.*;
+
 
 
 public class Main {

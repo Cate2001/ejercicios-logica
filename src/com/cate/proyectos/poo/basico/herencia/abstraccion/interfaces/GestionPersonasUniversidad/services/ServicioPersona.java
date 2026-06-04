@@ -3,7 +3,7 @@ package com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPer
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Estudiante;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Persona;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Profesor;
-import proyectos_poo.poo_basico.herencia_abstraccion_interfaces.GestionPersonasUniversidad.model.*;
+
 
 /**
  * Servicio de gestión de personas en el sistema universitario.

@@ -1,7 +1,6 @@
 package com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.model;
 
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.enums.Nivel;
-import proyectos_poo.poo_basico.herencia_abstraccion_interfaces.SportifyTech.enums.*;
 
 /**
  * Representa a competidor en el sistema deportivo SportifyTech.

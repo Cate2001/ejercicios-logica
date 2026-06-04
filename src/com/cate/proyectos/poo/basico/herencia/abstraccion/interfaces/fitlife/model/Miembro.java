@@ -83,9 +83,9 @@ public abstract class Miembro {
     }
 
     //Metodos abstractos
-    abstract double  calcularPagoMensual();
-    abstract String getTipo();
-    abstract String[] getBeneficios();
+    public abstract double  calcularPagoMensual();
+    public abstract String getTipo();
+    public abstract String[] getBeneficios();
 
     @Override
     public boolean equals(Object o) {

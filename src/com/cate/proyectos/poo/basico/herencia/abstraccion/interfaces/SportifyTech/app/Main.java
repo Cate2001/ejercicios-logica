@@ -3,7 +3,6 @@ package com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTe
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.enums.Nivel;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.model.Competidor;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.model.Entrenador;
-import proyectos_poo.poo_basico.herencia_abstraccion_interfaces.SportifyTech.model.*;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.services.ServicioCompetidor;
 
 public class Main {

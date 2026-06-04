@@ -9,18 +9,18 @@ public class MiembroEstandar extends Miembro {
     }
 
     @Override
-    double calcularPagoMensual() {
+    public double calcularPagoMensual() {
         return getMembresia().getPrecioConDescuento();
     }
 
     @Override
-    String getTipo() {
+    public String getTipo() {
         return "ESTANDAR";
 
     }
 
     @Override
-    String[] getBeneficios() {
+    public String[] getBeneficios() {
         String[] beneficios = new String[] {"Acceso a máquinas", "Casillero incluido"};
         return beneficios;
     }
