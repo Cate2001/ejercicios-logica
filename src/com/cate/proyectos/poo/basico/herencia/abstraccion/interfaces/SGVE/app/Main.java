@@ -7,7 +7,59 @@ import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.model.
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.model.Vehiculo;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.services.VehiculoService;
 
+/**
+ * Clase principal de demostración del Sistema de Gestión de Vehículos de Envío (SGVE).
+ * <p>
+ * Esta clase contiene un conjunto exhaustivo de pruebas que demuestran el funcionamiento
+ * del sistema, incluyendo:
+ * </p>
+ * <ul>
+ * <li>Creación y operación de diferentes tipos de vehículos (Dron, Moto, Camión)</li>
+ * <li>Implementación de interfaces (GPS, Recargable)</li>
+ * <li>Gestión de vehículos mediante VehiculoService</li>
+ * <li>Cálculo de costos de envío personalizados por tipo de vehículo</li>
+ * <li>Búsqueda y filtrado de vehículos por estado y placa</li>
+ * <li>Validación de dominio y manejo de excepciones</li>
+ * </ul>
+ * <p>
+ * Las pruebas están diseñadas para validar todos los aspectos funcionales del sistema,
+ * incluyendo casos de éxito y casos de error esperados para validar las validaciones
+ * de dominio implementadas.
+ * </p>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta todas las pruebas del sistema SGVE.
+     * <p>
+     * Realiza 19 pruebas diferentes que cubren:
+     * </p>
+     * <ol>
+     * <li>Creación y operación de Dron (ubicación GPS, recarga de batería, cálculo de costo)</li>
+     * <li>Creación y operación de Moto (ubicación GPS, cálculo de costo)</li>
+     * <li>Creación y operación de Camión (ubicación GPS, cálculo de costo con peajes)</li>
+     * <li>Registro de vehículos en VehiculoService</li>
+     * <li>Cálculo de costos de envío mediante el servicio</li>
+     * <li>Búsqueda de vehículos por placa</li>
+     * <li>Filtrado de vehículos por estado (DISPONIBLE)</li>
+     * <li>Validación: Dron con batería insuficiente (< 20%)</li>
+     * <li>Validación: Vehículo con placa nula</li>
+     * <li>Validación: Vehículo con capacidad negativa</li>
+     * <li>Validación: Registro de vehículo null en servicio</li>
+     * <li>Validación: Cálculo de costos con vehículo null</li>
+     * <li>Validación: Mostrar vehículos sin registros previos</li>
+     * <li>Validación: Búsqueda por placa vacía</li>
+     * <li>Validación: Búsqueda por placa null</li>
+     * <li>Validación: Dron con valores negativos (batería, altura, consumo)</li>
+     * <li>Validación: Moto con valores negativos (cilindraje, consumo)</li>
+     * <li>Validación: Camión con valores negativos (ejes, carga, peajes)</li>
+     * <li>Búsqueda de vehículo no existente</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     static void main(String[] args) {
         // Crear instancia del servicio
         VehiculoService servicio = new VehiculoService();

@@ -3,9 +3,46 @@ package com.cate.proyectos.poo.basico.SIMAP.app;
 import com.cate.proyectos.poo.basico.SIMAP.model.Parqueadero;
 import com.cate.proyectos.poo.basico.SIMAP.model.Vehiculo;
 
-
-
+/**
+ * Clase principal de demostración del Sistema de Gestión de Parqueaderos (SIMAP).
+ * <p>
+ * Esta clase contiene pruebas que demuestran el funcionamiento del sistema,
+ * incluyendo registro de entradas/salidas de vehículos y cálculo de tarifas.
+ * </p>
+ * <p>
+ * Las pruebas validan:
+ * </p>
+ * <ul>
+ * <li>Creación de vehículos con placa, hora de entrada y tipo</li>
+ * <li>Registro de entrada de vehículos en el parqueadero</li>
+ * <li>Prevención de entrada cuando el parqueadero está lleno</li>
+ * <li>Registro de salida y cálculo de costos basado en tiempo de estadía</li>
+ * <li>Manejo de errores cuando la placa no existe</li>
+ * <li>Cálculo de espacios libres disponibles</li>
+ * </ul>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta las pruebas del sistema SIMAP.
+     * <p>
+     * Realiza pruebas que cubren:
+     * </p>
+     * <ol>
+     * <li>Creación de vehículos (moto y carro)</li>
+     * <li>Creación de parqueadero con capacidad 2 y tarifa $10,000/hora</li>
+     * <li>Registro de entradas exitosas</li>
+     * <li>Intento de entrada con parqueadero lleno (error esperado)</li>
+     * <li>Verificación de espacios libres</li>
+     * <li>Registro de salida con cálculo de costo</li>
+     * <li>Intento de salida con placa incorrecta (error esperado)</li>
+     * <li>Verificación de espacios libres después de salida</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
 
         System.out.println("=== SISTEMA DE GESTIÓN DE PARQUEADEROS (SIMAP) ===\n");

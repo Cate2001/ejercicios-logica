@@ -6,7 +6,45 @@ import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPers
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.model.Profesor;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.services.ServicioPersona;
 
+/**
+ * Clase principal de demostración del Sistema de Gestión de Personas de Universidad.
+ * <p>
+ * Esta clase contiene pruebas que demuestran el funcionamiento del sistema,
+ * incluyendo gestión de estudiantes y profesores con herencia y polimorfismo.
+ * </p>
+ * <p>
+ * Las pruebas validan:
+ * </p>
+ * <ul>
+ * <li>Creación de estudiantes y profesores con atributos específicos</li>
+ * <li>Registro de personas en el servicio con validación de capacidad</li>
+ * <li>Visualización de personas agregadas</li>
+ * <li>Conteo de personas por tipo (estudiantes y profesores)</li>
+ * <li>Organización de personas en matriz por tipo</li>
+ * <li>Ejecución de actividades específicas (estudiar, dar clases)</li>
+ * </ul>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta las pruebas del sistema de gestión universitaria.
+     * <p>
+     * Realiza pruebas que cubren:
+     * </p>
+     * <ol>
+     * <li>Creación de 2 estudiantes (Carlos, Camilo) con carrera Tecnología</li>
+     * <li>Creación de 2 profesores (Daniel, Carolina) con materias específicas</li>
+     * <li>Registro de personas en el servicio (capacidad máxima: 4)</li>
+     * <li>Visualización de todas las personas agregadas</li>
+     * <li>Conteo de estudiantes y profesores por separado</li>
+     * <li>Organización de personas en matriz (fila 0: estudiantes, fila 1: profesores)</li>
+     * <li>Ejecución de actividades polimórficas (estudiar, dar clases)</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
         ServicioPersona servicioPersona  = new ServicioPersona();
 

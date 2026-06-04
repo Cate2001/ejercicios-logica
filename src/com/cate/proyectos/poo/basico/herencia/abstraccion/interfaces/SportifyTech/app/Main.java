@@ -5,7 +5,49 @@ import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTec
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.model.Entrenador;
 import com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.services.ServicioCompetidor;
 
+/**
+ * Clase principal de demostración del sistema deportivo SportifyTech.
+ * <p>
+ * Esta clase contiene pruebas exhaustivas que demuestran el funcionamiento del sistema
+ * de asignación de entrenadores a competidores basándose en criterios de aptitud física,
+ * especialidad deportiva, credibilidad y experiencia.
+ * </p>
+ * <p>
+ * Las pruebas validan:
+ * </p>
+ * <ul>
+ * <li>Asignación correcta de entrenador por especialidad deportiva</li>
+ * <li>Selección por mayor credibilidad física</li>
+ * <li>Desempate por años de experiencia</li>
+ * <li>Validación de aptitud para competir (IMC y consumo de agua)</li>
+ * <li>Prevención de asignación duplicada de entrenador</li>
+ * <li>Manejo de deportes sin entrenadores disponibles</li>
+ * <li>Validación de parámetros nulos y arreglos vacíos</li>
+ * </ul>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta las pruebas del sistema SportifyTech.
+     * <p>
+     * Realiza 9 pruebas que cubren:
+     * </p>
+     * <ol>
+     * <li>ASIGNACIÓN CORRECTA: Competidor apto con deporte coincidente (Gimnasio)</li>
+     * <li>SELECCIÓN POR MAYOR CREDIBILIDAD: Entre entrenadores del mismo deporte</li>
+     * <li>DESEMPATE POR EXPERIENCIA: Cuando la credibilidad es igual</li>
+     * <li>COMPETIDOR NO APTO: IMC fuera de rango (error esperado)</li>
+     * <li>COMPETIDOR YA TIENE ENTRENADOR: Prevención de reasignación (error esperado)</li>
+     * <li>DEPORTE DIFERENTE: Boxeo sin entrenadores disponibles (error esperado)</li>
+     * <li>COMPETIDOR NULL: Validación de parámetro nulo (error esperado)</li>
+     * <li>ENTRENADORES NULL: Validación de parámetro nulo (error esperado)</li>
+     * <li>ARREGLO VACÍO: Validación de arreglo vacío (error esperado)</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
 
                 ServicioCompetidor servicio = new ServicioCompetidor();

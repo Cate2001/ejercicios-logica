@@ -4,9 +4,40 @@ import com.cate.proyectos.poo.basico.SIGRAV.model.Avion;
 import com.cate.proyectos.poo.basico.SIGRAV.model.RutaAerea;
 import com.cate.proyectos.poo.basico.SIGRAV.model.Vuelo;
 
-
-
+/**
+ * Clase principal de demostración del Sistema de Gestión de Rutas Aéreas (SIGRAV).
+ * <p>
+ * Esta clase contiene pruebas que demuestran el funcionamiento del sistema,
+ * incluyendo cálculo de costos de vuelos con rutas directas y con escalas.
+ * </p>
+ * <p>
+ * Las pruebas validan:
+ * </p>
+ * <ul>
+ * <li>Cálculo de costos para rutas directas (A -> B)</li>
+ * <li>Cálculo de costos para rutas con escalas (A -> C)</li>
+ * <li>Detección de rutas imposibles (A -> Z)</li>
+ * <li>Asignación de aviones a vuelos</li>
+ * <li>Validación de costos finales (ruta + operación del avión)</li>
+ * </ul>
+ *
+ * @author Caterine Salinas Bolaños
+ * @version 1.0
+ */
 public class Main {
+    /**
+     * Método principal que ejecuta las pruebas del sistema SIGRAV.
+     * <p>
+     * Realiza 3 pruebas que cubren:
+     * </p>
+     * <ol>
+     * <li>RUTA DIRECTA: Vuelo de A a B con costo de ruta $100 + costo operación avión $500 = $600</li>
+     * <li>RUTA CON ESCALA: Vuelo de A a C con escala en B (A->B $100 + B->C $150 = $250) + costo operación avión $500 = $750</li>
+     * <li>RUTA IMPOSIBLE: Vuelo de A a Z (no existe ruta) retorna costo -1.0</li>
+     * </ol>
+     *
+     * @param args argumentos de línea de comandos (no utilizados)
+     */
     public static void main(String[] args) {
 
         // 1. INICIALIZAR EL MOTOR DE COSTOS
