@@ -23,49 +23,55 @@ El proyecto sigue una arquitectura modular organizada en dos grandes categorías
 ### 📂 Estructura de Directorios
 
 ```
-src/
-├── ejercicios_basicos/          # Ejercicios fundamentales de lógica
-│   ├── arreglos/                # Manipulación de arrays y algoritmos
-│   ├── basicos/                 # Conceptos básicos de Java
-│   ├── ciclos/                  # Estructuras iterativas
-│   ├── condicionales/           # Lógica condicional
-│   ├── funciones/              # Métodos y programación funcional
-│   ├── matrices/                # Matrices bidimensionales
-│   └── recursividad/            # Algoritmos recursivos
+src/com/cate/
+├── ejercicios/
+│   └── basicos/                 # Ejercicios fundamentales de lógica
+│       ├── arreglos/           # Manipulación de arrays y algoritmos
+│       ├── basicos/            # Conceptos básicos de Java
+│       ├── ciclos/             # Estructuras iterativas
+│       ├── condicionales/      # Lógica condicional
+│       ├── funciones/         # Métodos y programación funcional
+│       ├── matrices/           # Matrices bidimensionales
+│       └── recursividad/       # Algoritmos recursivos
 │
-└── proyectos_poo/               # Proyectos de Programación Orientada a Objetos
-    └── poo_basico/
-        ├── SIGRAV/              # Sistema de Gestión de Rutas Aéreas
-        │   ├── app/             # Capa de aplicación/presentación
-        │   └── model/           # Modelo de dominio
-        ├── SIMAP/               # Sistema de Gestión de Parqueaderos
-        │   ├── app/
-        │   └── model/
-        ├── herencia_abstraccion_interfaces/# Proyectos de herencia, abstracción e interfaces
-        │   ├── GestionPersonasUniversidad/
-        │   │   ├── app/
-        │   │   ├── enums/
-        │   │   ├── model/
-        │   │   └── services/
-        │   ├── SGVE/                    # Sistema de Gestión de Vehículos de Envío
-        │   │   ├── app/
-        │   │   ├── enums/
-        │   │   ├── interfaces/
-        │   │   ├── model/
-        │   │   ├── services/
-        │   │   └── util/
-        │   ├── SportifyTech/
-        │   │   ├── app/
-        │   │   ├── enums/
-        │   │   ├── model/
-        │   │   └── services/
-        │   └── fitlife/
-        │       ├── app/
-        │       ├── enums/
-        │       ├── model/
-        │       ├── services/
-        │       └── util/
-        └── orden_compra/        # Sistema de órdenes de compra
+└── proyectos/
+    └── poo/
+        └── basico/
+            ├── SIGRAV/              # Sistema de Gestión de Rutas Aéreas
+            │   ├── app/             # Capa de aplicación/presentación
+            │   └── model/           # Modelo de dominio
+            ├── SIMAP/               # Sistema de Gestión de Parqueaderos
+            │   ├── app/
+            │   └── model/
+            ├── herencia/
+            │   └── abstraccion/
+            │       └── interfaces/  # Proyectos de herencia, abstracción e interfaces
+            │           ├── GestionPersonasUniversidad/
+            │           │   ├── app/
+            │           │   ├── enums/
+            │           │   ├── model/
+            │           │   └── services/
+            │           ├── SGVE/      # Sistema de Gestión de Vehículos de Envío
+            │           │   ├── app/
+            │           │   ├── enums/
+            │           │   ├── interfaces/
+            │           │   ├── model/
+            │           │   ├── services/
+            │           │   └── util/
+            │           ├── SportifyTech/
+            │           │   ├── app/
+            │           │   ├── enums/
+            │           │   ├── model/
+            │           │   └── services/
+            │           └── fitlife/
+            │               ├── app/
+            │               ├── enums/
+            │               ├── model/
+            │               ├── services/
+            │               └── util/
+            └── orden/
+                └── compra/          # Sistema de órdenes de compra
+                
 ```
 
 ### 🎨 Patrones de Arquitectura Implementados
@@ -160,10 +166,17 @@ src/
 - Cálculo de pagos con descuentos
 - Utilidades de cálculo (IVA, precios)
 
-**Orden de Compra**
-- Gestión de clientes y productos
-- Cálculo de totales
-- Fechas de orden
+**Sistema de Órdenes de Compra**
+- Clase OrdenCompra con identificador único autoincremental
+- Gestión de clientes (nombre, apellido)
+- Gestión de productos (fabricante, nombre, precio)
+- Capacidad máxima de 4 productos por orden
+- Cálculo automático del gran total de la orden
+- Validaciones exhaustivas de dominio en constructores y setters
+- Manejo de fechas de orden
+- Clases: Cliente, Producto, OrdenCompra, EjemploOrdenes
+- Validación de límites de capacidad de productos
+- Excepciones con mensajes claros para validaciones
 
 ### 🔹 Buenas Prácticas Implementadas
 
@@ -207,12 +220,12 @@ src/
    - Esperar a que IntelliJ indexe el proyecto
 
 3. **Ejecutar ejercicios básicos**
-   - Navegar a `src/ejercicios_basicos/[categoria]`
-   - Seleccionar el archivo Main.java o clase principal
+   - Navegar a `src/com/cate/ejercicios/basicos/[categoria]`
+   - Seleccionar el archivo Java correspondiente
    - Click derecho → Run 'NombreClase'
 
 4. **Ejecutar proyectos POO**
-   - Navegar a `src/proyectos_poo/poo_basico/[proyecto]/app`
+   - Navegar a `src/com/cate/proyectos/poo/basico/[proyecto]/app`
    - Ejecutar la clase Main.java
    - Verificar la salida en consola
 
@@ -221,25 +234,31 @@ src/
 **Ejercicio Básico - Arreglos**
 ```bash
 # Ejecutar eliminación de duplicados
-Run: ejercicios_basicos.arreglos.EliminarValoresDuplicadoscados
+Run: com.cate.ejercicios.basicos.arreglos.EliminarValoresDuplicados
 ```
 
 **Proyecto POO - SIGRAV**
 ```bash
 # Ejecutar sistema de rutas aéreas
-Run: app.SIGRAV.com.cate.proyectos.poo.basico.Main
+Run: com.cate.proyectos.poo.basico.SIGRAV.app.Main
 ```
 
 **Proyecto POO - FitLife**
 ```bash
 # Ejecutar sistema de gimnasio
-Run: app.fitlife.herencia_abstraccion_interfaces.com.cate.proyectos.poo.basico.Main
+Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main
 ```
 
 **Proyecto POO - SGVE**
 ```bash
 # Ejecutar sistema de gestión de vehículos de envío
-Run: app.SGVE.herencia_abstraccion_interfaces.com.cate.proyectos.poo.basico.Main
+Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main
+```
+
+**Proyecto POO - Órdenes de Compra**
+```bash
+# Ejecutar sistema de órdenes de compra
+Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 ```
 
 ---
@@ -247,13 +266,13 @@ Run: app.SGVE.herencia_abstraccion_interfaces.com.cate.proyectos.poo.basico.Main
 ## 📊 Métricas del Proyecto
 
 - **Total de ejercicios básicos**: 19
-- **Total de proyectos POO**: 5
-- **Total de archivos Java**: 35
-- **Clases implementadas**: 35+
+- **Total de proyectos POO**: 7
+- **Total de archivos Java**: 52
+- **Clases implementadas**: 52+
 - **Interfaces implementadas**: 2 (GPS, Recargable)
-- **Enumeraciones**: 2 (EstadoVehiculo, TipoPersona)
-- **Clases de utilidades**: 2 (Constantes en SGVE y fitlife)
-- **Líneas de código**: ~4000+
+- **Enumeraciones**: 5 (EstadoVehiculo, TipoPersona, Nivel, TipoMembresia, DiaSemana)
+- **Clases de utilidades**: 2 (Constantes en SGVE, Calculadora en fitlife)
+- **Líneas de código**: ~5000+
 - **Complejidad algorítmica**: Básica a Intermedia
 - **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer (implícitos)
 - **Casos de prueba unitarios**: 19 (SGVE)
