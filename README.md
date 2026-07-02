@@ -1,8 +1,8 @@
 # 🧠 Ejercicios de Lógica y Programación Orientada a Objetos en Java
 
-Este repositorio contiene una colección estructurada de **ejercicios de lógica de programación y proyectos de Programación Orientada a Objetos (POO)** desarrollados en Java, organizados siguiendo estándares profesionales de arquitectura de software y buenas prácticas de desarrollo.
+Este repositorio contiene una colección estructurada de **ejercicios de lógica de programación, proyectos de POO y prácticas con Colecciones** desarrollados en Java, organizados siguiendo estándares profesionales de arquitectura de software y buenas prácticas de desarrollo.
 
-El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras de datos**, **patrones de diseño**, y **arquitectura orientada a objetos**, simulando escenarios reales del entorno corporativo de desarrollo Java.
+El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras de datos**, **colecciones**, **patrones de diseño**, y **arquitectura orientada a objetos**, simulando escenarios reales del entorno corporativo de desarrollo Java.
 
 ---
 
@@ -10,6 +10,7 @@ El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras
 
 - **Fortalecer la lógica algorítmica** mediante ejercicios progresivos de complejidad
 - **Aplicar principios SOLID** y patrones de diseño en arquitectura orientada a objetos
+- **Dominar el uso de Colecciones** (List, Set, Map) en sistemas de gestión
 - **Demostrar capacidad de análisis** y diseño de soluciones escalables y mantenibles
 - **Implementar buenas prácticas de Clean Code** y organización de paquetes
 - **Servir como portafolio técnico** profesional para procesos de selección en desarrollo Java
@@ -18,7 +19,7 @@ El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras
 
 ## 🏗️ Arquitectura del Proyecto
 
-El proyecto sigue una arquitectura modular organizada en dos grandes categorías:
+El proyecto sigue una arquitectura modular organizada en tres grandes categorías:
 
 ### 📂 Estructura de Directorios
 
@@ -34,12 +35,30 @@ src/com/cate/
 │       ├── matrices/           # Matrices bidimensionales
 │       └── recursividad/       # Algoritmos recursivos
 │
+├── practica/
+│   └── nuevos/
+│       └── conceptos/
+│           └── colecciones/    # Prácticas con el framework de Colecciones
+│               ├── SGB/        # Sistema de Gestión de Biblioteca
+│               │   ├── app/
+│               │   ├── enums/
+│               │   ├── model/
+│               │   ├── repository/
+│               │   ├── services/
+│               │   └── util/
+│               └── SGCM/       # Sistema de Gestión de Concierto Masivo
+│                   ├── app/
+│                   ├── enums/
+│                   ├── model/
+│                   ├── service/
+│                   └── util/
+│
 └── proyectos/
     └── poo/
         └── basico/
             ├── SIGRAV/              # Sistema de Gestión de Rutas Aéreas
-            │   ├── app/             # Capa de aplicación/presentación
-            │   └── model/           # Modelo de dominio
+            │   ├── app/
+            │   └── model/
             ├── SIMAP/               # Sistema de Gestión de Parqueaderos
             │   ├── app/
             │   └── model/
@@ -71,18 +90,18 @@ src/com/cate/
             │               └── util/
             └── orden/
                 └── compra/          # Sistema de órdenes de compra
-                
 ```
 
 ### 🎨 Patrones de Arquitectura Implementados
 
-- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, util, enums, interfaces)
+- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, util, enums, interfaces, repository)
 - **Domain-Driven Design**: Organización por dominios de negocio
+- **Repository Pattern**: Capa de acceso a datos abstraída (SGB)
 - **Encapsulamiento**: Clases con atributos privados y acceso controlado
 - **Herencia y Polimorfismo**: Uso de clases abstractas y interfaces
 - **Interfaces**: Contratos de comportamiento (GPS, Recargable)
 - **Inmutabilidad**: Objetos con atributos finales donde aplica
-- **Validación de Dominio**: Lógica de validación en constructores
+- **Validación de Dominio**: Lógica de validación en constructores y setters
 - **Servicios**: Capa de lógica de negocio separada del modelo
 
 ---
@@ -118,6 +137,22 @@ src/com/cate/
 - Búsqueda del número mayor
 - División y conquista
 - Backtracking básico
+
+### 🔹 Colecciones en Java
+
+**SGB - Sistema de Gestión de Biblioteca**
+- Gestión de libros, usuarios y préstamos con ArrayList y HashMap
+- CRUD completo con búsqueda por múltiples criterios
+- Repositorio en memoria usando colecciones
+- Validación de préstamos activos y fechas de devolución
+- Separación en capas: service, repository, model, util
+
+**SGCM - Sistema de Gestión de Concierto Masivo**
+- Gestión de bandas, boletas, sillas y asistentes
+- Clasificación de boletas por tipo (VIP, General) con precios
+- Organización de sillas por categoría y disposición en el estadio
+- Uso de enums para estado de boleta, género musical y categoría
+- Validaciones de dominio y generación de IDs
 
 ### 🔹 Programación Orientada a Objetos Avanzada
 
@@ -193,17 +228,16 @@ src/com/cate/
 
 ## 🛠️ Stack Tecnológico
 
-- **Java 17+**: Lenguaje de programación principal
+- **Java 21**: Lenguaje de programación principal
 - **IntelliJ IDEA**: IDE de desarrollo
 - **Git**: Control de versiones
-- **Maven/Gradle**: Gestión de dependencias (según configuración del proyecto)
 
 ---
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
 ### Prerrequisitos
-- JDK 17 o superior instalado
+- JDK 21 o superior instalado
 - IntelliJ IDEA o IDE compatible con Java
 - Git (para clonar el repositorio)
 
@@ -224,40 +258,44 @@ src/com/cate/
    - Seleccionar el archivo Java correspondiente
    - Click derecho → Run 'NombreClase'
 
-4. **Ejecutar proyectos POO**
-   - Navegar a `src/com/cate/proyectos/poo/basico/[proyecto]/app`
+4. **Ejecutar proyectos POO y prácticas**
+   - Navegar a `src/com/cate/[proyecto]/app`
    - Ejecutar la clase Main.java
-   - Verificar la salida en consola
 
 ### Ejemplos de Ejecución
 
 **Ejercicio Básico - Arreglos**
 ```bash
-# Ejecutar eliminación de duplicados
 Run: com.cate.ejercicios.basicos.arreglos.EliminarValoresDuplicados
+```
+
+**Práctica - SGB (Biblioteca)**
+```bash
+Run: com.cate.practica.nuevos.conceptos.colecciones.SGB.app.Main
+```
+
+**Práctica - SGCM (Concierto Masivo)**
+```bash
+Run: com.cate.practica.nuevos.conceptos.colecciones.SGCM.app.Main
 ```
 
 **Proyecto POO - SIGRAV**
 ```bash
-# Ejecutar sistema de rutas aéreas
 Run: com.cate.proyectos.poo.basico.SIGRAV.app.Main
-```
-
-**Proyecto POO - FitLife**
-```bash
-# Ejecutar sistema de gimnasio
-Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main
 ```
 
 **Proyecto POO - SGVE**
 ```bash
-# Ejecutar sistema de gestión de vehículos de envío
 Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main
+```
+
+**Proyecto POO - FitLife**
+```bash
+Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main
 ```
 
 **Proyecto POO - Órdenes de Compra**
 ```bash
-# Ejecutar sistema de órdenes de compra
 Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 ```
 
@@ -267,14 +305,16 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 
 - **Total de ejercicios básicos**: 19
 - **Total de proyectos POO**: 7
-- **Total de archivos Java**: 52
-- **Clases implementadas**: 52+
+- **Total de prácticas con Colecciones**: 2
+- **Total de proyectos**: 9
+- **Total de archivos Java**: 99
+- **Clases abstractas**: 3 (Material, Miembro, Vehiculo)
 - **Interfaces implementadas**: 2 (GPS, Recargable)
-- **Enumeraciones**: 5 (EstadoVehiculo, TipoPersona, Nivel, TipoMembresia, DiaSemana)
-- **Clases de utilidades**: 2 (Constantes en SGVE, Calculadora en fitlife)
+- **Enumeraciones**: 14
+- **Clases de utilidades**: 4
 - **Líneas de código**: ~5000+
 - **Complejidad algorítmica**: Básica a Intermedia
-- **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer (implícitos)
+- **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer, Repository (implícitos)
 - **Casos de prueba unitarios**: 19 (SGVE)
 
 ---
@@ -287,6 +327,13 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 - ✅ Manejo eficiente de memoria
 - ✅ Algoritmos de ordenamiento y búsqueda
 
+### Colecciones de Java
+- ✅ ArrayList y LinkedList
+- ✅ HashMap y TreeMap
+- ✅ HashSet y TreeSet
+- ✅ Iteración y búsqueda en colecciones
+- ✅ Complejidad Big-O en operaciones con colecciones
+
 ### Programación Orientada a Objetos
 - ✅ Encapsulamiento y abstracción
 - ✅ Herencia y polimorfismo
@@ -298,6 +345,7 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 ### Arquitectura de Software
 - ✅ Separación de capas
 - ✅ Domain-Driven Design básico
+- ✅ Repository Pattern
 - ✅ Inyección de dependencias (manual)
 - ✅ Manejo de excepciones
 - ✅ Validación de dominio
@@ -308,7 +356,7 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 
 **Caterine Salinas Bolaños**  
 Desarrolladora Java Junior  
-Colombia 🇨🇴  
+Colombia  
 
 📌 Repositorio desarrollado como portafolio técnico y proceso de fortalecimiento en desarrollo Java profesional.
 
@@ -318,7 +366,7 @@ Colombia 🇨🇴
 
 - [ ] Implementar tests unitarios con JUnit 5
 - [ ] Agregar integración continua con GitHub Actions
-- [ ] Documentación con JavaDoc
+- [x] Documentación con JavaDoc
 - [ ] Implementar patrones de diseño adicionales
 - [ ] Agregar persistencia con JDBC/JPA
 - [ ] Crear API REST con Spring Boot
@@ -333,4 +381,3 @@ Este proyecto es de uso educativo y portafolio técnico. El código es propiedad
 ---
 
 ⭐ *Este repositorio representa el compromiso con la excelencia técnica y el aprendizaje continuo en desarrollo de software profesional.*
-

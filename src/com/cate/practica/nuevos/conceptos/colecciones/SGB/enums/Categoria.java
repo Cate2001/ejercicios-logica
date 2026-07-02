@@ -1,0 +1,15 @@
+package com.cate.practica.nuevos.conceptos.colecciones.SGB.enums;
+
+public enum Categoria {
+    ROMANCE,
+    MISTERIO_Y_THRILLER,
+    FANTASIA,
+    CIENCIA_FICCION,
+    FICCION_HISTORICA,
+    LITERATURA_JUVENIL,
+    DESARROLLO_PERSONAL,
+    BIOGRAFIAS_Y_MEMORIAS,
+    FINANZAS_Y_NEGOCIOS,
+    HISTORIA_Y_POLITICA,
+    SALUD_Y_BIENESTAR
+}
