@@ -119,9 +119,17 @@ src/com/cate/
 - Operaciones bidimensionales
 
 **Estructuras de Control**
-- Condicionales anidados
-- Bucles for/while
+- Condicionales: juego de adivinar número, detección de palíndromos
+- Bucles for/while: promedio de calificaciones, estadísticas de arreglos
 - Control de flujo complejo
+
+**Funciones**
+- Método para invertir un array (con separación entrada/proceso/salida)
+- Detección del duplicado único con truco matemático
+- Conteo de elementos mayores al promedio de una matriz
+
+**Estáticos**
+- Variables y métodos estáticos compartidos entre instancias (campo `contador`, método `autoincrementar`)
 
 **Recursividad**
 - Suma recursiva de arrays
@@ -130,17 +138,15 @@ src/com/cate/
 - Cálculo de potencias
 - Búsqueda de números en arrays
 - Búsqueda del número mayor
-- División y conquista
-- Backtracking básico
 
 ### 🔹 Colecciones en Java
 
 **SGB - Sistema de Gestión de Biblioteca**
-- Gestión de libros, usuarios, préstamos, revistas y cómics con HashMap y ArrayList
-- CRUD completo con búsqueda por múltiples criterios
-- Repositorio en memoria usando colecciones
-- Validación de préstamos activos y fechas de devolución
-- Separación en capas: services, repository, model, util
+- Modelo de dominio completo: Material (abstracto), Libro, Revista, Comic, Usuario, Bibliotecario, Prestamo, Biblioteca
+- Enumeraciones: Categoria, DiaSemana, Disponinilidad, Idioma
+- Utilidades: GeneradorId, Validaciones, Constantes
+- Capa de repositorio iniciada (MaterialRepository con alta de materiales; Usuario/Prestamo/Bibliotecario en desarrollo)
+- Servicio de negocio (BibliotecaService) en desarrollo
 
 ### 🔹 Programación Orientada a Objetos Avanzada
 
@@ -333,9 +339,8 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 - ✅ Algoritmos de ordenamiento y búsqueda
 
 ### Colecciones de Java
-- ✅ ArrayList y LinkedList
-- ✅ HashMap y TreeMap
-- ✅ HashSet y TreeSet
+- ✅ ArrayList (VehiculoService, MaterialRepository)
+- ✅ LinkedHashMap (Biblioteca)
 - ✅ Iteración y búsqueda en colecciones
 - ✅ Complejidad Big-O en operaciones con colecciones
 

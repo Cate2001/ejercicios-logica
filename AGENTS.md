@@ -3,7 +3,7 @@
 ## Project type
 - Plain Java / IntelliJ IDEA module — **no Maven, no Gradle, no build tool**
 - JDK 21 (with preview features) configured in IDE; JDK 24 available on PATH
-- No `.gitignore` at root — only `.idea/.gitignore`
+- Root `.gitignore` exists (ignores `.idea/`, `out/`, `target/`, `bin/`, `build/`, `node_modules/`, `*.iml`)
 
 ## No test framework
 - Zero JUnit or any test library. "Tests" are `System.out.println` in `main()` methods — visually inspected only.
@@ -19,14 +19,14 @@
   - `services/` or `service/` — business logic
   - `enums/` — enumerations
   - `util/` — helpers
-  - `repositoryUsuario/` — data access (SGB only)
+  - `repository/` — data access (SGB only)
   - `interfaces/` — interface definitions (SGVE only)
 
 ## Package structure
 ```
-com.cate.ejercicios.basicos/{arreglos,basicos,ciclos,condicionales,funciones,matrices,recursividad}
+com.cate.ejercicios.basicos/{arreglos,basicos,ciclos,condicionales,estatico,funciones,matrices,recursividad}
 com.cate.proyectos.poo.basico.{SIGRAV,SIMAP,orden.compra,herencia.abstraccion.interfaces.{fitlife,GestionPersonasUniversidad,SGVE,SportifyTech}}
-com.cate.practica.nuevos.conceptos.colecciones.{SGB,SGCM}
+com.cate.practica.nuevos.conceptos.colecciones.SGB
 ```
 
 ## Entry points (fully-qualified class names)
@@ -40,7 +40,6 @@ com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.app.M
 com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.app.Main
 com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 com.cate.practica.nuevos.conceptos.colecciones.SGB.app.Main
-com.cate.practica.nuevos.conceptos.colecciones.SGCM.app.Main
 ```
 
 ## Compile & run (terminal)
@@ -49,15 +48,10 @@ javac -d out/production/ejercicios-logica src/com/cate/**/*.java
 java -cp out/production/ejercicios-logica com.cate.proyectos.poo.basico.SIGRAV.app.Main
 ```
 
-## README is outdated
-- Directory tree in README is simplified and does not match the actual deeper package layout.
-- Metrics (52 files, 7 POO projects) exclude the two practice projects under `practica/` (SGB, SGCM — ~extra files).
-- README claims Maven/Gradle "según configuración del proyecto" — neither is present.
-
-## Undocumented projects
-- `com.cate.practica.nuevos.conceptos.colecciones.SGB` (Biblioteca)
-- `com.cate.practica.nuevos.conceptos.colecciones.SGCM` (Conciertos Musicales)
-- Not listed in README metrics or tree.
+## README is up to date
+- README metrics reflect the current state: 84 files, 21 basic exercises, 7 POO projects, 1 practice (SGB).
+- `SGCM` was moved out to its own repo (`sistema-concierto`); it is no longer part of this project.
+- Directory tree and entry points in README match the real layout.
 
 ## Code style quirks
 - `static void main` (without `public`) found in SGVE::Main — likely a typo, not idiomatic.
