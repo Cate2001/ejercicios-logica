@@ -31,6 +31,7 @@ src/com/cate/
 │       ├── basicos/            # Conceptos básicos de Java
 │       ├── ciclos/             # Estructuras iterativas
 │       ├── condicionales/      # Lógica condicional
+│       ├── estatico/           # Palabra clave static
 │       ├── funciones/         # Métodos y programación funcional
 │       ├── matrices/           # Matrices bidimensionales
 │       └── recursividad/       # Algoritmos recursivos
@@ -39,18 +40,12 @@ src/com/cate/
 │   └── nuevos/
 │       └── conceptos/
 │           └── colecciones/    # Prácticas con el framework de Colecciones
-│               ├── SGB/        # Sistema de Gestión de Biblioteca
-│               │   ├── app/
-│               │   ├── enums/
-│               │   ├── model/
-│               │   ├── repository/
-│               │   ├── services/
-│               │   └── util/
-│               └── SGCM/       # Sistema de Gestión de Concierto Masivo
+│               └── SGB/        # Sistema de Gestión de Biblioteca
 │                   ├── app/
 │                   ├── enums/
 │                   ├── model/
-│                   ├── service/
+│                   ├── repository/
+│                   ├── services/
 │                   └── util/
 │
 └── proyectos/
@@ -94,7 +89,7 @@ src/com/cate/
 
 ### 🎨 Patrones de Arquitectura Implementados
 
-- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, util, enums, interfaces, repository)
+- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, repository, util, enums, interfaces)
 - **Domain-Driven Design**: Organización por dominios de negocio
 - **Repository Pattern**: Capa de acceso a datos abstraída (SGB)
 - **Encapsulamiento**: Clases con atributos privados y acceso controlado
@@ -141,18 +136,11 @@ src/com/cate/
 ### 🔹 Colecciones en Java
 
 **SGB - Sistema de Gestión de Biblioteca**
-- Gestión de libros, usuarios y préstamos con ArrayList y HashMap
+- Gestión de libros, usuarios, préstamos, revistas y cómics con HashMap y ArrayList
 - CRUD completo con búsqueda por múltiples criterios
 - Repositorio en memoria usando colecciones
 - Validación de préstamos activos y fechas de devolución
-- Separación en capas: service, repository, model, util
-
-**SGCM - Sistema de Gestión de Concierto Masivo**
-- Gestión de bandas, boletas, sillas y asistentes
-- Clasificación de boletas por tipo (VIP, General) con precios
-- Organización de sillas por categoría y disposición en el estadio
-- Uso de enums para estado de boleta, género musical y categoría
-- Validaciones de dominio y generación de IDs
+- Separación en capas: services, repository, model, util
 
 ### 🔹 Programación Orientada a Objetos Avanzada
 
@@ -186,7 +174,7 @@ src/com/cate/
 - Servicio VehiculoService con gestión dinámica usando ArrayList
 - Validaciones exhaustivas de dominio en constructores y setters
 - Cálculo de costos de envío personalizado por tipo de vehículo
-- Pruebas unitarias con 19 casos de prueba
+- Pruebas funcionales con 19 escenarios manuales (en Main)
 
 **SportifyTech - Plataforma Deportiva**
 - Competidores y entrenadores
@@ -228,9 +216,11 @@ src/com/cate/
 
 ## 🛠️ Stack Tecnológico
 
-- **Java 21**: Lenguaje de programación principal
+- **Java 21**: Lenguaje de programación principal (configurado en el IDE)
+- **JDK 24**: Disponible en el PATH del sistema (compatible con el código actual)
 - **IntelliJ IDEA**: IDE de desarrollo
 - **Git**: Control de versiones
+- **Sin Maven/Gradle**: Proyecto Java plano; compilación directa con `javac`
 
 ---
 
@@ -269,19 +259,24 @@ src/com/cate/
 Run: com.cate.ejercicios.basicos.arreglos.EliminarValoresDuplicados
 ```
 
+**Ejercicio Básico - Recursividad**
+```bash
+Run: com.cate.ejercicios.basicos.recursividad.Main
+```
+
 **Práctica - SGB (Biblioteca)**
 ```bash
 Run: com.cate.practica.nuevos.conceptos.colecciones.SGB.app.Main
 ```
 
-**Práctica - SGCM (Concierto Masivo)**
-```bash
-Run: com.cate.practica.nuevos.conceptos.colecciones.SGCM.app.Main
-```
-
 **Proyecto POO - SIGRAV**
 ```bash
 Run: com.cate.proyectos.poo.basico.SIGRAV.app.Main
+```
+
+**Proyecto POO - SIMAP**
+```bash
+Run: com.cate.proyectos.poo.basico.SIMAP.app.Main
 ```
 
 **Proyecto POO - SGVE**
@@ -294,6 +289,16 @@ Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main
 Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main
 ```
 
+**Proyecto POO - SportifyTech**
+```bash
+Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.app.Main
+```
+
+**Proyecto POO - Gestión Personas Universidad**
+```bash
+Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.app.Main
+```
+
 **Proyecto POO - Órdenes de Compra**
 ```bash
 Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
@@ -303,19 +308,19 @@ Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
 
 ## 📊 Métricas del Proyecto
 
-- **Total de ejercicios básicos**: 19
+- **Total de ejercicios básicos**: 21
 - **Total de proyectos POO**: 7
-- **Total de prácticas con Colecciones**: 2
-- **Total de proyectos**: 9
-- **Total de archivos Java**: 99
+- **Total de prácticas con Colecciones**: 1
+- **Total de proyectos**: 8
+- **Total de archivos Java**: 84
 - **Clases abstractas**: 3 (Material, Miembro, Vehiculo)
 - **Interfaces implementadas**: 2 (GPS, Recargable)
-- **Enumeraciones**: 14
-- **Clases de utilidades**: 4
-- **Líneas de código**: ~5000+
+- **Enumeraciones**: 9
+- **Clases de utilidades**: 5
+- **Líneas de código**: ~6200 (sin líneas vacías)
 - **Complejidad algorítmica**: Básica a Intermedia
 - **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer, Repository (implícitos)
-- **Casos de prueba unitarios**: 19 (SGVE)
+- **Escenarios de prueba funcionales**: 19 (SGVE), 17 (FitLife), 9 (SportifyTech), 3 (SIGRAV) — ejecución manual vía `Main`
 
 ---
 
