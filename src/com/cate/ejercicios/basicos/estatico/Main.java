@@ -1,7 +1,7 @@
 package com.cate.ejercicios.basicos.estatico;
 
 public class Main {
-    public static void main() {
+    public static void main(String[] args) {
         Ejemplo ejemplo = new Ejemplo(1);
         Ejemplo ejemplo2 = new Ejemplo(2);
         Ejemplo.autoincrementar();

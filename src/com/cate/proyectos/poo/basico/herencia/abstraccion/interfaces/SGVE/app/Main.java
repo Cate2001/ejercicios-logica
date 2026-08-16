@@ -60,7 +60,7 @@ public class Main {
      *
      * @param args argumentos de línea de comandos (no utilizados)
      */
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // Crear instancia del servicio
         VehiculoService servicio = new VehiculoService();
 

@@ -1,7 +1,7 @@
 package com.cate.ejercicios.basicos.recursividad;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         //double[] notas = new double[] {2.4, 5.0, 3.7, 2.1};
 
         //Practica.sumar(notas, 0);

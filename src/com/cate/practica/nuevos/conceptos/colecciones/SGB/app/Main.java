@@ -5,7 +5,7 @@ import com.cate.practica.nuevos.conceptos.colecciones.SGB.model.*;
 
 public class Main {
     public static void main(String[] args) {
-        Libro libro = new Libro( "Libro", Idioma.ESPAÑOL, Disponinilidad.DISPONIBLE, Categoria.ROMANCE, "Io", 400, 123456789);
+        Libro libro = new Libro( "Libro", Idioma.ESPAÑOL, Disponinilidad.DISPONIBLE, Categoria.ROMANCE, "Isaac Asimov", 400, 123456789);
         libro.setDisponible(Disponinilidad.NO_DISPONIBLE);
         System.out.println(libro);
 
