@@ -3,7 +3,6 @@
 Este repositorio contiene una colección estructurada de **ejercicios de lógica de programación, proyectos de POO y prácticas con Colecciones** desarrollados en Java, organizados siguiendo estándares profesionales de arquitectura de software y buenas prácticas de desarrollo.
 
 El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras de datos**, **colecciones**, **patrones de diseño**, y **arquitectura orientada a objetos**, simulando escenarios reales del entorno corporativo de desarrollo Java.
-
 ---
 
 ## 🎯 Objetivo del Proyecto
