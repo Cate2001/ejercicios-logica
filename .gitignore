@@ -8,3 +8,6 @@ node_modules/
 docs/
 *.iml
 
+# Memoria de trabajo del agente: no es documentacion publica
+MEMORY.md
+
