@@ -130,10 +130,6 @@ Genéricos
 Problemas integradores
 ```
 
-La ruta completa y su planificación se encuentran en:
-
-**[Ruta de aprendizaje](docs/rutaAprendizaje.md)**
-
 > **Estado real de la ruta:** los pasos de *Fundamentos* a *Programación Orientada a Objetos* tienen ejercicios que los ejercitan. *Excepciones* se aplica dentro de los sistemas. *Genéricos* y *Problemas integradores* están planificados y aún no tienen ejercicios propios.
 
 ---
@@ -231,7 +227,7 @@ como módulo Maven automáticamente; luego se elige el `Main.java` del sistema y
 
 ## 📊 Estado actual
 
-El estado del proyecto se mantiene de forma independiente al README para poder registrar el progreso de manera continua.
+El estado se actualiza en este README a medida que avanza el proyecto.
 
 | Área | Estado |
 |---|---|
@@ -244,17 +240,6 @@ El estado del proyecto se mantiene de forma independiente al README para poder r
 | Persistencia | Solo en memoria |
 
 **Tema en el que se está trabajando actualmente:** revisión de elección de estructuras de datos en los sistemas, con el fin de justificar cada decisión de colección —array, `List` o `Map`— según el problema que resuelve y no por costumbre.
-
-Para consultar el estado detallado:
-
-**[Estado del proyecto](docs/estado.md)**
-
----
-
-## 📖 Documentación
-
-* **[Ruta de aprendizaje](docs/rutaAprendizaje.md)** — ruta de aprendizaje y temas previstos.
-* **[Estado del proyecto](docs/estado.md)** — estado actual, avances, pendientes y próximos pasos.
 
 ---
 

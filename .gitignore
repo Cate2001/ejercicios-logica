@@ -5,6 +5,6 @@ bin/
 build/
 ejercicios-logica.iml/
 node_modules/
-docs/estado.md/
+docs/
 *.iml
 
