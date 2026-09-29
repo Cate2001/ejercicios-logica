@@ -11,35 +11,37 @@ package com.cate.ejercicios.basicos.matrices;
  * Se podría representar con un vacío "", por ejemplo.
  */
 
-public class triqui {
-    static void main(String[] args) {
+public class Triqui {
+    public static void main(String[] args) {
 
+        Character[][] triqui = {
+                {'X', 'O', 'X'},
+                {'O', 'X', 'O'},
+                {'X', 'O', 'X'}
+        };
+
+     
+
+        analizarMatriz(triqui);
     }
 
-    public String analizarMatriz(String[][] matriz) {
+    public static String analizarMatriz(Character[][] matriz) {
         if (matriz == null) throw new IllegalArgumentException("La matriz no puede ser null");
         if (matriz.length != 3 && matriz[0].length != 3) throw new IllegalArgumentException("Nulo");
 
-        String x = "X";
-        String o = "O";
-        String empate = "Empate";
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
 
-        int xCount = 0;
-        int oCount = 0;
-        for (String[] fila : matriz) {
-            for (String valor : fila){
-                if (valor != null){
-                    if (valor.equalsIgnoreCase(x)) xCount++;
-                    if (valor.equalsIgnoreCase(o)) oCount++;
-                }
+
             }
 
         }
-        int diferenciaProporcion = xCount - oCount;
 
-        if (diferenciaProporcion > 1 || diferenciaProporcion < 0) return "Nulo";
 
-        return "Exitoso";
+
+        
+        return null;
+
 
     }
 }

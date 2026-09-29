@@ -1,4 +1,4 @@
-package com.cate.ejercicios.basicos.basicos;
+package com.cate.ejercicios.basicos.funciones;
 public class Multiplo {
     public static void main(String[] args) {
 

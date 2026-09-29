@@ -1,392 +1,270 @@
-# 🧠 Ejercicios de Lógica y Programación Orientada a Objetos en Java
+# Ejercicios de lógica de programación
 
-Este repositorio contiene una colección estructurada de **ejercicios de lógica de programación, proyectos de POO y prácticas con Colecciones** desarrollados en Java, organizados siguiendo estándares profesionales de arquitectura de software y buenas prácticas de desarrollo.
+Repositorio dedicado a la práctica y fortalecimiento de la lógica de programación mediante ejercicios desarrollados en Java.
 
-El proyecto demuestra dominio técnico en **pensamiento lógico**, **estructuras de datos**, **colecciones**, **patrones de diseño**, y **arquitectura orientada a objetos**, simulando escenarios reales del entorno corporativo de desarrollo Java.
----
-
-## 🎯 Objetivo del Proyecto
-
-- **Fortalecer la lógica algorítmica** mediante ejercicios progresivos de complejidad
-- **Aplicar principios SOLID** y patrones de diseño en arquitectura orientada a objetos
-- **Dominar el uso de Colecciones** (List, Set, Map) en sistemas de gestión
-- **Demostrar capacidad de análisis** y diseño de soluciones escalables y mantenibles
-- **Implementar buenas prácticas de Clean Code** y organización de paquetes
-- **Servir como portafolio técnico** profesional para procesos de selección en desarrollo Java
+El repositorio reúne ejercicios progresivos orientados a desarrollar la capacidad de análisis, resolución de problemas y aplicación de fundamentos de programación, junto con **ocho sistemas de gestión de dominio** que aplican esos fundamentos en un contexto de negocio real.
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+## 🎯 Objetivo
 
-El proyecto sigue una arquitectura modular organizada en tres grandes categorías:
+El objetivo principal de este proyecto es fortalecer la lógica de programación mediante la resolución progresiva de problemas en Java.
 
-### 📂 Estructura de Directorios
+A través de los ejercicios se busca desarrollar:
 
+* Capacidad de análisis y descomposición de problemas.
+* Pensamiento algorítmico.
+* Manejo de estructuras de control.
+* Uso de estructuras de datos.
+* Programación orientada a objetos.
+* Aplicación de buenas prácticas de programación.
+* Capacidad para identificar, analizar y mejorar soluciones.
+
+El repositorio tiene dos partes, y ambas se sostienen mutuamente:
+
+* **23 ejercicios** de sintaxis y algoritmia, organizados de menor a mayor dificultad.
+* **8 sistemas de gestión de dominio** donde esos conceptos se aplican sobre problemas reales, con arquitectura por capas, herencia, interfaces, enumeraciones y validación de dominio.
+
+Los ejercicios son la base; los sistemas son donde se aplica.
+
+---
+
+## 🛠️ Tecnologías y herramientas
+
+* Java
+* JDK 21
+* Maven 3.9 o superior
+* IntelliJ IDEA
+* Git
+* GitHub
+
+---
+
+## 📚 Contenido
+
+Los ejercicios se organizan progresivamente de acuerdo con los conceptos de programación que se van trabajando.
+
+### Fundamentos
+
+* Variables y tipos de datos.
+* Operadores.
+* Entrada y salida de datos.
+* Conversión de tipos.
+
+### Estructuras de control
+
+* Condicionales.
+* Operadores lógicos.
+* Ciclos.
+* Acumuladores y contadores.
+
+### Métodos
+
+* Declaración y uso de métodos.
+* Parámetros.
+* Retorno de valores.
+* Descomposición de problemas.
+
+### Estructuras de datos
+
+* Arrays.
+* Strings.
+* Colecciones.
+* Manejo y recorrido de datos.
+
+### Programación orientada a objetos
+
+* Clases y objetos.
+* Encapsulamiento.
+* Constructores.
+* Herencia.
+* Polimorfismo.
+* Interfaces.
+* Enumeraciones.
+* Excepciones.
+
+### Resolución de problemas
+
+Ejercicios que combinan progresivamente diferentes conceptos para resolver problemas de mayor complejidad.
+
+### Sistemas de gestión de dominio
+
+Ocho sistemas donde los conceptos anteriores se aplican sobre un problema de negocio concreto. Cada uno tiene su propia capa de modelo, servicio y punto de entrada.
+
+| Sistema | Problema que resuelve |
+|---|---|
+| **SGVE** — Gestión de Vehículos de Envío | Cálculo de costos de envío sobre una flota heterogénea (drones, motos, camiones) con contratos `GPS` y `Recargable` |
+| **SGB** — Gestión de Biblioteca | Catálogo, préstamos y devoluciones de materiales heterogéneos con horario semanal y control de disponibilidad |
+| **FitLife** — Gestión de Gimnasio | Membresías, asistencias e ingresos, con tres tipos de socio y cálculo de pagos con descuentos e IVA |
+| **SportifyTech** — Plataforma Deportiva | Asignación de competidores a entrenadores según nivel, con validación de aptitud física |
+| **SIGRAV** — Gestión de Rutas Aéreas | Optimización y costeo de rutas comerciales mediante matriz de adyacencia |
+| **SIMAP** — Gestión de Parqueaderos | Registro de vehículos y cobro por tiempo de estadía con tarifas por espacio |
+| **Gestión de Personas Universidad** | Jerarquía de tipos de persona con responsabilidades diferenciadas según rol |
+| **Órdenes de Compra** | Ciclo de compra con cálculo de totales, límites de capacidad y control de fechas |
+
+Cada sistema incluye un `Main` con escenarios de prueba manual que ejercitan sus casos principales.
+
+---
+
+## 🗺️ Ruta de aprendizaje
+
+El proyecto sigue una progresión desde fundamentos de programación hacia conceptos de mayor complejidad.
+
+```text
+Fundamentos
+    ↓
+Estructuras de control
+    ↓
+Métodos
+    ↓
+Arrays y Strings
+    ↓
+Colecciones
+    ↓
+Programación Orientada a Objetos
+    ↓
+Excepciones
+    ↓
+Genéricos
+    ↓
+Problemas integradores
 ```
-src/com/cate/
-├── ejercicios/
-│   └── basicos/                 # Ejercicios fundamentales de lógica
-│       ├── arreglos/           # Manipulación de arrays y algoritmos
-│       ├── basicos/            # Conceptos básicos de Java
-│       ├── ciclos/             # Estructuras iterativas
-│       ├── condicionales/      # Lógica condicional
-│       ├── estatico/           # Palabra clave static
-│       ├── funciones/         # Métodos y programación funcional
-│       ├── matrices/           # Matrices bidimensionales
-│       └── recursividad/       # Algoritmos recursivos
+
+La ruta completa y su planificación se encuentran en:
+
+**[Ruta de aprendizaje](docs/rutaAprendizaje.md)**
+
+> **Estado real de la ruta:** los pasos de *Fundamentos* a *Programación Orientada a Objetos* tienen ejercicios que los ejercitan. *Excepciones* se aplica dentro de los sistemas. *Genéricos* y *Problemas integradores* están planificados y aún no tienen ejercicios propios.
+
+---
+
+## 📁 Organización del proyecto
+
+Los ejercicios se organizan de acuerdo con los conceptos que se están practicando. Los sistemas se organizan por dominio de negocio.
+
+```text
+.
+├── pom.xml                         # Configuración de Maven
 │
-├── practica/
-│   └── nuevos/
-│       └── conceptos/
-│           └── colecciones/    # Prácticas con el framework de Colecciones
-│               └── SGB/        # Sistema de Gestión de Biblioteca
-│                   ├── app/
-│                   ├── enums/
-│                   ├── model/
-│                   ├── repository/
-│                   ├── services/
-│                   └── util/
+src/
+├── main/java/com/cate/         # Código de producción (86 archivos)
+│   ├── ejercicios/basicos/         # Práctica de lógica algorítmica (23 archivos)
+│   │   ├── arreglos/  basicos/  ciclos/  coleccion/
+│   │   └── condicionales/  funciones/  matrices/  recursividad/
+│   │
+│   ├── proyectos/poo/basico/       # Sistemas de gestión de dominio (42 archivos)
+│   │   ├── SIGRAV/                 # Gestión de rutas aéreas
+│   │   ├── SIMAP/                  # Gestión de parqueaderos
+│   │   ├── orden/compra/           # Órdenes de compra
+│   │   └── herencia/abstraccion/interfaces/
+│   │       ├── SGVE/               # Gestión de vehículos de envío
+│   │       ├── fitlife/            # Gestión de gimnasio
+│   │       ├── SportifyTech/       # Plataforma deportiva
+│   │       └── GestionPersonasUniversidad/
+│   │
+│   └── practica/nuevos/conceptos/colecciones/
+│       └── SGB/                # Gestión de biblioteca (21 archivos)
 │
-└── proyectos/
-    └── poo/
-        └── basico/
-            ├── SIGRAV/              # Sistema de Gestión de Rutas Aéreas
-            │   ├── app/
-            │   └── model/
-            ├── SIMAP/               # Sistema de Gestión de Parqueaderos
-            │   ├── app/
-            │   └── model/
-            ├── herencia/
-            │   └── abstraccion/
-            │       └── interfaces/  # Proyectos de herencia, abstracción e interfaces
-            │           ├── GestionPersonasUniversidad/
-            │           │   ├── app/
-            │           │   ├── enums/
-            │           │   ├── model/
-            │           │   └── services/
-            │           ├── SGVE/      # Sistema de Gestión de Vehículos de Envío
-            │           │   ├── app/
-            │           │   ├── enums/
-            │           │   ├── interfaces/
-            │           │   ├── model/
-            │           │   ├── services/
-            │           │   └── util/
-            │           ├── SportifyTech/
-            │           │   ├── app/
-            │           │   ├── enums/
-            │           │   ├── model/
-            │           │   └── services/
-            │           └── fitlife/
-            │               ├── app/
-            │               ├── enums/
-            │               ├── model/
-            │               ├── services/
-            │               └── util/
-            └── orden/
-                └── compra/          # Sistema de órdenes de compra
+└── test/java/                  # Pruebas unitarias (aún vacía)
 ```
 
-### 🎨 Patrones de Arquitectura Implementados
+La estructura puede evolucionar conforme aumente la cantidad y complejidad de los ejercicios.
 
-- **Separación de Responsabilidades**: Capas diferenciadas (app, model, services, repository, util, enums, interfaces)
-- **Domain-Driven Design**: Organización por dominios de negocio
-- **Repository Pattern**: Capa de acceso a datos abstraída (SGB)
-- **Encapsulamiento**: Clases con atributos privados y acceso controlado
-- **Herencia y Polimorfismo**: Uso de clases abstractas y interfaces
-- **Interfaces**: Contratos de comportamiento (GPS, Recargable)
-- **Inmutabilidad**: Objetos con atributos finales donde aplica
-- **Validación de Dominio**: Lógica de validación en constructores y setters
-- **Servicios**: Capa de lógica de negocio separada del modelo
+### Capas por sistema
+
+| Capa | Responsabilidad |
+|---|---|
+| `app` | Punto de entrada y escenarios de prueba manual |
+| `model` | Entidades de negocio y datos |
+| `services` | Lógica de negocio separada del modelo |
+| `repository` | Acceso a datos (solo SGB) |
+| `interfaces` | Contratos de comportamiento (solo SGVE) |
+| `enums` | Enumeraciones de dominio |
+| `util` | Utilidades, constantes y validaciones |
 
 ---
 
-## 🧩 Contenidos Técnicos
+## ▶️ Ejecución
 
-### 🔹 Fundamentos de Lógica de Programación
+### Con IntelliJ IDEA
 
-**Arreglos y Algoritmos**
-- Rotación de arreglos
-- Eliminación de duplicados
-- Inversión de arrays
-- Reorganización de elementos (ceros al final)
-- Orden inverso
+1. Clonar el repositorio.
+2. Abrir el proyecto en IntelliJ IDEA.
+3. Configurar el JDK 21.
+4. Seleccionar el ejercicio o el `Main.java` del sistema a ejecutar.
+5. Ejecutar la clase correspondiente.
 
-**Matrices**
-- Suma de matrices
-- Transposición
-- Matriz identidad
-- Operaciones bidimensionales
+### Desde la terminal
 
-**Estructuras de Control**
-- Condicionales: juego de adivinar número, detección de palíndromos
-- Bucles for/while: promedio de calificaciones, estadísticas de arreglos
-- Control de flujo complejo
+Requiere JDK 21 y Maven 3.9 o superior.
 
-**Funciones**
-- Método para invertir un array (con separación entrada/proceso/salida)
-- Detección del duplicado único con truco matemático
-- Conteo de elementos mayores al promedio de una matriz
+```bash
+# Clonar
+git clone https://github.com/Cate2001/ejercicios-logica.git
+cd ejercicios-logica
 
-**Estáticos**
-- Variables y métodos estáticos compartidos entre instancias (campo `contador`, método `autoincrementar`)
+# Compilar
+mvn clean compile
 
-**Recursividad**
-- Suma recursiva de arrays
-- Conteo hacia atrás y adelante
-- Suma de números consecutivos
-- Cálculo de potencias
-- Búsqueda de números en arrays
-- Búsqueda del número mayor
+# Ejecutar un sistema
+mvn -q compile exec:java -Dexec.mainClass="com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main"
+```
 
-### 🔹 Colecciones en Java
+Desde IntelliJ: abrir la carpeta del proyecto. IntelliJ detecta el `pom.xml` y lo importa
+como módulo Maven automáticamente; luego se elige el `Main.java` del sistema y se ejecuta.
 
-**SGB - Sistema de Gestión de Biblioteca**
-- Modelo de dominio completo: Material (abstracto), Libro, Revista, Comic, Usuario, Bibliotecario, Prestamo, Biblioteca
-- Enumeraciones: Categoria, DiaSemana, Disponinilidad, Idioma
-- Utilidades: GeneradorId, Validaciones, Constantes
-- Capa de repositorio iniciada (MaterialRepository con alta de materiales; Usuario/Prestamo/Bibliotecario en desarrollo)
-- Servicio de negocio (BibliotecaService) en desarrollo
+### Puntos de entrada
 
-### 🔹 Programación Orientada a Objetos Avanzada
-
-**SIGRAV - Sistema de Gestión de Rutas Aéreas**
-- Cálculo de costos de vuelos
-- Motor de rutas con matriz de adyacencia
-- Asignación de aviones a rutas
-- Validación de rutas posibles/imposibles
-
-**SIMAP - Sistema de Gestión de Parqueaderos**
-- Registro de entrada/salida de vehículos
-- Cálculo de tarifas por tiempo
-- Gestión de espacios disponibles
-- Validación de placas
-
-**Gestión de Personas Universidad**
-- Herencia: Persona → Estudiante/Profesor
-- Enumeraciones para tipos de persona
-- Servicio de gestión de personas
-- Validación de dominio
-
-**SGVE - Sistema de Gestión de Vehículos de Envío**
-- Clase abstracta Vehiculo con atributos comunes (placa, marca, capacidadCarga, estado, distanciaRecorrida)
-- Clases concretas: Dron, Moto, Camion con atributos específicos
-  - Dron: nivelBateria, alturaMaxima, consumoBateria (implementa GPS y Recargable)
-  - Moto: cilindraje, consumoGasolina (implementa GPS)
-  - Camion: numeroEjes, pesoActualCarga, costoPeajes (implementa GPS)
-- Interfaces: GPS (ubicación) y Recargable (batería)
-- Enumeración de estados: DISPONIBLE, EN_RUTA, MANTENIMIENTO
-- Clase de utilidades Constantes con valores centralizados (COSTO_BASE, BATERIA_MAXIMA, COSTO_KM_CAMION)
-- Servicio VehiculoService con gestión dinámica usando ArrayList
-- Validaciones exhaustivas de dominio en constructores y setters
-- Cálculo de costos de envío personalizado por tipo de vehículo
-- Pruebas funcionales con 19 escenarios manuales (en Main)
-
-**SportifyTech - Plataforma Deportiva**
-- Competidores y entrenadores
-- Niveles de habilidad (PRINCIPIANTE, INTERMEDIO, AVANZADO)
-- Asignación inteligente de entrenadores
-- Validación de aptitud física
-
-**FitLife - Sistema de Gimnasio**
-- Clases abstractas: Miembro → Estudiantil/Estandar/VIP
-- Tipos de membresía con precios y beneficios
-- Registro de asistencia por día
-- Cálculo de pagos con descuentos
-- Utilidades de cálculo (IVA, precios)
-
-**Sistema de Órdenes de Compra**
-- Clase OrdenCompra con identificador único autoincremental
-- Gestión de clientes (nombre, apellido)
-- Gestión de productos (fabricante, nombre, precio)
-- Capacidad máxima de 4 productos por orden
-- Cálculo automático del gran total de la orden
-- Validaciones exhaustivas de dominio en constructores y setters
-- Manejo de fechas de orden
-- Clases: Cliente, Producto, OrdenCompra, EjemploOrdenes
-- Validación de límites de capacidad de productos
-- Excepciones con mensajes claros para validaciones
-
-### 🔹 Buenas Prácticas Implementadas
-
-- **Clean Code**: Nombres descriptivos, métodos cortos, responsabilidad única
-- **SOLID**: Principios de diseño orientado a objetos
-- **Validaciones**: Excepciones con mensajes claros
-- **Encapsulamiento**: Getters/Setters controlados
-- **Constantes**: Uso de final para valores inmutables
-- **Equals/HashCode**: Implementación correcta para comparación de objetos
-- **ToString**: Representación legible de objetos
-- **Documentación**: Comentarios explicativos en código complejo
+| Sistema | Clase principal |
+|---|---|
+| SGVE | `com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main` |
+| SGB | `com.cate.practica.nuevos.conceptos.colecciones.SGB.app.Main` |
+| FitLife | `com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main` |
+| SportifyTech | `com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.app.Main` |
+| SIGRAV | `com.cate.proyectos.poo.basico.SIGRAV.app.Main` |
+| SIMAP | `com.cate.proyectos.poo.basico.SIMAP.app.Main` |
+| Universidad | `com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.app.Main` |
+| Órdenes | `com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes` |
+| Ejercicios | `com.cate.ejercicios.basicos.recursividad.Main` |
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 📊 Estado actual
 
-- **Java 21**: Lenguaje de programación principal (configurado en el IDE)
-- **JDK 24**: Disponible en el PATH del sistema (compatible con el código actual)
-- **IntelliJ IDEA**: IDE de desarrollo
-- **Git**: Control de versiones
-- **Sin Maven/Gradle**: Proyecto Java plano; compilación directa con `javac`
+El estado del proyecto se mantiene de forma independiente al README para poder registrar el progreso de manera continua.
 
----
+| Área | Estado |
+|---|---|
+| Ejercicios de lógica (23) | Completos, organizados por concepto y dificultad |
+| Sistemas de dominio (8) | Completos, con escenarios de prueba manual |
+| SGB — modelo y repositorio | En construcción: 1 de 4 repositorios con métodos implementados |
+| SGB — capa de servicio | Pendiente: lógica de préstamo y devolución |
+| Build | Maven — `pom.xml` sin dependencias externas |
+| Pruebas automatizadas | No iniciadas — `src/test/java/` está vacía |
+| Persistencia | Solo en memoria |
 
-## 🚀 Cómo Ejecutar el Proyecto
+**Tema en el que se está trabajando actualmente:** revisión de elección de estructuras de datos en los sistemas, con el fin de justificar cada decisión de colección —array, `List` o `Map`— según el problema que resuelve y no por costumbre.
 
-### Prerrequisitos
-- JDK 21 o superior instalado
-- IntelliJ IDEA o IDE compatible con Java
-- Git (para clonar el repositorio)
+Para consultar el estado detallado:
 
-### Pasos de Ejecución
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone [URL-del-repositorio]
-   cd ejercicios-logica
-   ```
-
-2. **Abrir en IntelliJ IDEA**
-   - File → Open → Seleccionar directorio del proyecto
-   - Esperar a que IntelliJ indexe el proyecto
-
-3. **Ejecutar ejercicios básicos**
-   - Navegar a `src/com/cate/ejercicios/basicos/[categoria]`
-   - Seleccionar el archivo Java correspondiente
-   - Click derecho → Run 'NombreClase'
-
-4. **Ejecutar proyectos POO y prácticas**
-   - Navegar a `src/com/cate/[proyecto]/app`
-   - Ejecutar la clase Main.java
-
-### Ejemplos de Ejecución
-
-**Ejercicio Básico - Arreglos**
-```bash
-Run: com.cate.ejercicios.basicos.arreglos.EliminarValoresDuplicados
-```
-
-**Ejercicio Básico - Recursividad**
-```bash
-Run: com.cate.ejercicios.basicos.recursividad.Main
-```
-
-**Práctica - SGB (Biblioteca)**
-```bash
-Run: com.cate.practica.nuevos.conceptos.colecciones.SGB.app.Main
-```
-
-**Proyecto POO - SIGRAV**
-```bash
-Run: com.cate.proyectos.poo.basico.SIGRAV.app.Main
-```
-
-**Proyecto POO - SIMAP**
-```bash
-Run: com.cate.proyectos.poo.basico.SIMAP.app.Main
-```
-
-**Proyecto POO - SGVE**
-```bash
-Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SGVE.app.Main
-```
-
-**Proyecto POO - FitLife**
-```bash
-Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.fitlife.app.Main
-```
-
-**Proyecto POO - SportifyTech**
-```bash
-Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.SportifyTech.app.Main
-```
-
-**Proyecto POO - Gestión Personas Universidad**
-```bash
-Run: com.cate.proyectos.poo.basico.herencia.abstraccion.interfaces.GestionPersonasUniversidad.app.Main
-```
-
-**Proyecto POO - Órdenes de Compra**
-```bash
-Run: com.cate.proyectos.poo.basico.orden.compra.EjemploOrdenes
-```
+**[Estado del proyecto](docs/estado.md)**
 
 ---
 
-## 📊 Métricas del Proyecto
+## 📖 Documentación
 
-- **Total de ejercicios básicos**: 21
-- **Total de proyectos POO**: 7
-- **Total de prácticas con Colecciones**: 1
-- **Total de proyectos**: 8
-- **Total de archivos Java**: 84
-- **Clases abstractas**: 3 (Material, Miembro, Vehiculo)
-- **Interfaces implementadas**: 2 (GPS, Recargable)
-- **Enumeraciones**: 9
-- **Clases de utilidades**: 5
-- **Líneas de código**: ~6200 (sin líneas vacías)
-- **Complejidad algorítmica**: Básica a Intermedia
-- **Patrones de diseño**: Strategy, Template Method, Factory, Service Layer, Repository (implícitos)
-- **Escenarios de prueba funcionales**: 19 (SGVE), 17 (FitLife), 9 (SportifyTech), 3 (SIGRAV) — ejecución manual vía `Main`
+* **[Ruta de aprendizaje](docs/rutaAprendizaje.md)** — ruta de aprendizaje y temas previstos.
+* **[Estado del proyecto](docs/estado.md)** — estado actual, avances, pendientes y próximos pasos.
 
 ---
 
-## 🎓 Conceptos Clave Demostrados
+## 🎓 Propósito del repositorio
 
-### Lógica de Programación
-- ✅ Análisis de complejidad algorítmica
-- ✅ Optimización de estructuras de datos
-- ✅ Manejo eficiente de memoria
-- ✅ Algoritmos de ordenamiento y búsqueda
+Este repositorio forma parte del proceso de aprendizaje y fortalecimiento de habilidades de programación en Java.
 
-### Colecciones de Java
-- ✅ ArrayList (VehiculoService, MaterialRepository)
-- ✅ LinkedHashMap (Biblioteca)
-- ✅ Iteración y búsqueda en colecciones
-- ✅ Complejidad Big-O en operaciones con colecciones
-
-### Programación Orientada a Objetos
-- ✅ Encapsulamiento y abstracción
-- ✅ Herencia y polimorfismo
-- ✅ Interfaces y clases abstractas
-- ✅ Implementación de múltiples interfaces
-- ✅ Composición sobre herencia
-- ✅ Principios SOLID
-
-### Arquitectura de Software
-- ✅ Separación de capas
-- ✅ Domain-Driven Design básico
-- ✅ Repository Pattern
-- ✅ Inyección de dependencias (manual)
-- ✅ Manejo de excepciones
-- ✅ Validación de dominio
+Los ejercicios pueden ser modificados, refactorizados y mejorados a medida que se incorporan nuevos conocimientos y mejores prácticas.
 
 ---
 
-## 👩‍💻 Autora
-
-**Caterine Salinas Bolaños**  
-Desarrolladora Java Junior  
-Colombia  
-
-📌 Repositorio desarrollado como portafolio técnico y proceso de fortalecimiento en desarrollo Java profesional.
-
----
-
-## 📈 Roadmap de Mejoras Futuras
-
-- [ ] Implementar tests unitarios con JUnit 5
-- [ ] Agregar integración continua con GitHub Actions
-- [x] Documentación con JavaDoc
-- [ ] Implementar patrones de diseño adicionales
-- [ ] Agregar persistencia con JDBC/JPA
-- [ ] Crear API REST con Spring Boot
-- [ ] Implementar logging con SLF4J/Logback
-
----
-
-## 📄 Licencia
-
-Este proyecto es de uso educativo y portafolio técnico. El código es propiedad de la autora y puede ser utilizado como referencia para fines de aprendizaje.
-
----
-
-⭐ *Este repositorio representa el compromiso con la excelencia técnica y el aprendizaje continuo en desarrollo de software profesional.*
+**Caterine Salinas Bolaños** — Desarrolladora Java Junior · Colombia
+[caterines2001@gmail.com](mailto:caterines2001@gmail.com) · [LinkedIn](https://www.linkedin.com/in/caterine-salinas-bolaños-2078781a4)

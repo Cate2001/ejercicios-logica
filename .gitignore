@@ -3,7 +3,8 @@ out/
 target/
 bin/
 build/
-AGENTS.md/
+ejercicios-logica.iml/
 node_modules/
+docs/estado.md/
 *.iml
 

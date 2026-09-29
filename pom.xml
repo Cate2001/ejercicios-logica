@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cate</groupId>
+    <artifactId>ejercicios-logica</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>ejercicios-logica</name>
+    <description>
+        Ejercicios de logica de programacion en Java, junto con ocho sistemas de gestion
+        de dominio que aplican los fundamentos en un contexto de negocio real.
+    </description>
+    <url>https://github.com/Cate2001/ejercicios-logica</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- 'release' en lugar de source/target: valida contra la API de Java 21,
+             no solo contra el idioma. -->
+        <maven.compiler.release>21</maven.compiler.release>
+    </properties>
+
+</project>
