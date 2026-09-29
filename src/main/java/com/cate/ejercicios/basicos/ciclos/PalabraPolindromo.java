@@ -1,4 +1,4 @@
-package com.cate.ejercicios.basicos.condicionales;
+package com.cate.ejercicios.basicos.ciclos;
 
 import java.util.Scanner;
 
