@@ -1,0 +1,85 @@
+Entre, líneas de código no nací sabiendo el camino, ni traía respuestas en las manos; aprendí a caminar preguntando, a equivocarme sin soltar el intento.
+Hubo días en que el código parecía hablar otro idioma, y una clase, una llave, un objeto, podían convertirse en una montaña. Pero volví. Volví al main,
+al método que no entendía,
+a la colección vacía,
+a ese error que parecía decirme
+que todavía no estaba lista.
+
+Y quizá esa fue mi primera lección:
+
+**estar aprendiendo
+no significa estar perdiendo.**
+
+Construyo despacio.
+Primero entiendo el porqué,
+después busco el cómo.
+No quiero memorizar comandos
+que mañana olvidaré;
+quiero comprender las piezas
+hasta poder construir con ellas.
+
+Java dejó de ser solamente un lenguaje.
+Ahora es el lugar donde practico
+la paciencia,
+la lógica,
+el orden,
+y también la confianza.
+
+Entre clases y objetos,
+entre repositorios y servicios,
+entre SQL, Git y errores,
+estoy aprendiendo algo
+que ningún tutorial puede enseñarme:
+
+que una solución no aparece
+porque alguien me la entregue,
+sino porque permanezco
+el tiempo suficiente
+frente al problema.
+
+Mi proyecto no es perfecto.
+Yo tampoco.
+
+Hay código que cambiaré,
+decisiones que cuestionaré,
+ramas que alguna vez romperé
+y volveré a reconstruir.
+
+Y está bien.
+
+Porque no estoy intentando demostrar
+que ya soy desarrolladora.
+
+Estoy construyéndome para serlo.
+
+Cada commit guarda una versión de mí.
+Cada error me muestra dónde crecer.
+Cada concepto que finalmente comprendo
+se convierte en una pieza más
+de algo mucho más grande.
+
+Y aunque a veces mire adelante
+y sienta que falta demasiado,
+cuando miro atrás
+descubro algo que antes no veía:
+
+**ya no soy quien comenzó.**
+
+Todavía tengo preguntas.
+Todavía tengo miedo.
+Todavía hay cosas que no sé.
+
+Pero sigo aquí.
+
+Aprendiendo.
+
+Una línea a la vez.
+Un concepto a la vez.
+Un problema a la vez.
+
+Y quizá algún día,
+cuando mire todo lo que construí,
+entenderé que mi mayor proyecto
+nunca fue solamente aprender Java.
+
+Fue aprender que también podía construirme a mí misma.
