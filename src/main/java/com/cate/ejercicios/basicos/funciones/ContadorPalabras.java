@@ -63,15 +63,19 @@ public class ContadorPalabras {
             letraActual = poema.charAt(i);
             if (caracteresOmitir.contains(letraActual)) {
                 if (!sb.isEmpty()) {
-                    palabrasPoema.add(sb.toString().toLowerCase());
+                    palabrasPoema.add(sb.toString());
                     sb.setLength(0);
                 }
                 continue;
             }
-            sb.append(letraActual);
+            sb.append(aMinuscula(letraActual));
         }
-        //eidan   steven   garcia   salinas
         return palabrasPoema;
+    }
+
+    private static char aMinuscula(char letra) {
+        if (letra >= 'A' && letra <= 'Z') return (char) (letra + 32);
+        return letra;
     }
 
     private static void mostrarResultado(Map<String, Integer> palabras) {

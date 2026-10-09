@@ -9,11 +9,11 @@ package com.cate.ejercicios.basicos.ciclos;
 public class Fibonacci {
     public static void main(String[] args) {
 
-        int numeroAnterior = 0;
-        int numeroActual = 1;
+        long numeroAnterior = 0;
+        long numeroActual = 1;
         System.out.print(numeroAnterior + ", " + numeroActual);
-        for (int i = 0; i < 49; i++) {
-            int resultadoSuma = numeroAnterior + numeroActual;
+        for (int i = 0; i < 48; i++) {
+            long resultadoSuma = numeroAnterior + numeroActual;
             numeroAnterior = numeroActual;
             numeroActual = resultadoSuma;
             System.out.print(", ");
