@@ -56,7 +56,7 @@ existen, y queda obsoleta al día siguiente.
 
 ## 🏗️ Info del proyecto
 
-Verificado contra el código el 2026-09-29. Si alguno de estos hechos queda obsoleto, corregirlo
+Verificado contra el código el 2026-10-09. Si alguno de estos hechos queda obsoleto, corregirlo
 aquí.
 
 **Maven 3.9.16** — `pom.xml` en la raíz. `maven.compiler.release=21` (no `source`/`target`).
@@ -107,7 +107,7 @@ a `src/main/java/com/`.
 - Estado actual del JavaDoc: las clases públicas de POO y SGB lo llevan en español con `@author`
   y `@version`; los ejercicios básicos no. Es la convención que ya existe, no una obligación de
   completarla — el criterio para agregar o no está en la skill `javadocs`.
-- **Los ejercicios básicos usan minúsculas en nombres de clase** (`triqui.java`,
+- **Los ejercicios básicos usan minúsculas en nombres de clase** (por ejemplo,
   `eliminarCaracteresRepetidos.java`) — viola UpperCamelCase. Los proyectos POO sí siguen la
   convención. Corregir los nombres es un refactor, no una limpieza: reportar, no arreglar.
 

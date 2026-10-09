@@ -22,7 +22,7 @@ A través de los ejercicios se busca desarrollar:
 
 El repositorio tiene dos partes, y ambas se sostienen mutuamente:
 
-* **23 ejercicios** de sintaxis y algoritmia, organizados de menor a mayor dificultad.
+* **26 ejercicios** de sintaxis y algoritmia, organizados de menor a mayor dificultad.
 * **8 sistemas de gestión de dominio** donde esos conceptos se aplican sobre problemas reales, con arquitectura por capas, herencia, interfaces, enumeraciones y validación de dominio.
 
 Los ejercicios son la base; los sistemas son donde se aplica.
@@ -143,10 +143,10 @@ Los ejercicios se organizan de acuerdo con los conceptos que se están practican
 ├── pom.xml                         # Configuración de Maven
 │
 src/
-├── main/java/com/cate/         # Código de producción (86 archivos)
-│   ├── ejercicios/basicos/         # Práctica de lógica algorítmica (23 archivos)
+├── main/java/com/cate/         # Código de producción (89 archivos)
+│   ├── ejercicios/basicos/         # Práctica de lógica algorítmica (26 archivos)
 │   │   ├── arreglos/  basicos/  ciclos/  coleccion/
-│   │   └── condicionales/  funciones/  matrices/  recursividad/
+│   │   └── funciones/  matrices/  recursividad/
 │   │
 │   ├── proyectos/poo/basico/       # Sistemas de gestión de dominio (42 archivos)
 │   │   ├── SIGRAV/                 # Gestión de rutas aéreas
@@ -231,7 +231,7 @@ El estado se actualiza en este README a medida que avanza el proyecto.
 
 | Área | Estado |
 |---|---|
-| Ejercicios de lógica (23) | Completos, organizados por concepto y dificultad |
+| Ejercicios de lógica (26) | Completos, organizados por concepto y dificultad |
 | Sistemas de dominio (8) | Completos, con escenarios de prueba manual |
 | SGB — modelo y repositorio | En construcción: 1 de 4 repositorios con métodos implementados |
 | SGB — capa de servicio | Pendiente: lógica de préstamo y devolución |
